@@ -177,7 +177,7 @@ export const projects = [
     ],
     image: tripforoLogo,
     tags: ["Angular", "TypeScript", "HTML", "Bootstarp", "SCSS", "Angular Material", "REST API"],
-    github: "https://github.com/mayanksir20",
+    github: "https://github.com/mayanksir20/Tripforo",
     webapp: "https://www.tripforo.com",
   },
   {
@@ -191,7 +191,7 @@ export const projects = [
     ],
     image: evAdvantageLogo,
     tags: ["HTML", "CSS", "JavaScript", "AJAX", ".NET", "Responsive Design"],
-    github: "https://github.com/mayanksir20",
+    github: "#",
     webapp: "https://www.evadvantage.com"
   },
   {
@@ -205,7 +205,7 @@ export const projects = [
     ],
     image: ucAdvantageLogo,
     tags: ["HTML", "CSS", "JavaScript", "AJAX", "Bootstarp", ".NET", "Responsive UI"],
-    github: "https://github.com/mayanksir20",
+    github: "#",
     webapp: "https://ucadvantage.net"
   },
   {
@@ -233,7 +233,7 @@ export const projects = [
     ],
     image: powerof10Logo, // Replace with the actual import
     tags: ["HTML", "CSS", "JavaScript", "Bootstarp", "jQuery", "REST API", "UI Design", "Responsive Design"],
-    github: "https://github.com/mayanksir20", // Add actual repo if different
+    github: "https://github.com/mayanksir20/PowerOf100-biz", // Add actual repo if different
     webapp: "https://www.powerof10.biz"
   },
   {
