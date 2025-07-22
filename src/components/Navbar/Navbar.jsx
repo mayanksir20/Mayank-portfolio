@@ -34,14 +34,15 @@ const Navbar = () => {
     { id: "experience", label: "Experience" },
     { id: "work", label: "Projects" },
     { id: "education", label: "Education" },
-    { id: "contact", label: "Contact" },
+     { id: "contact", label: "Contact" },
   ];
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] ${
+      className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] ${
         isScrolled ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md" : "bg-transparent"
       }`}
+      // lg:px-[20vw]
     >
       <div className="text-white py-5 flex justify-between items-center">
         {/* Logo */}
@@ -54,7 +55,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden lg:flex space-x-8 text-gray-300">
+        <ul className="hidden md:flex space-x-8 text-gray-300">
           {menuItems.map((item) => (
             <li
               key={item.id}
@@ -70,7 +71,7 @@ const Navbar = () => {
         </ul>
 
         {/* Social Icons */}
-        <div className="hidden lg:flex space-x-4">
+        <div className="hidden md:flex space-x-4">
           <a
             href="https://github.com/mayanksir20"
             target="_blank"
@@ -90,7 +91,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Icon */}
-        <div className="lg:hidden">
+        <div className="md:hidden">
           {isOpen ? (
             <FiX
               className="text-3xl text-[#8245ec] cursor-pointer"
@@ -107,7 +108,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Items */}
       {isOpen && (
-        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg lg:hidden">
+        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
           <ul className="flex flex-col items-center space-y-4 py-4 text-gray-300">
             {menuItems.map((item) => (
               <li
@@ -121,7 +122,7 @@ const Navbar = () => {
                 </button>
               </li>
             ))}
-            <div className="flex space-x-4 pt-2">
+            <div className="flex mt-1 space-x-4">
               <a
                 href="https://github.com/mayanksir20"
                 target="_blank"
